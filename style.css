@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: url(image/ImRoot.jpg);
+    background-size: cover;
+}
+
+header{
+    height: 80px;
+    background: transparent;
+    color: #fff;
+    transition: all 300ms ease-in-out;
+}
+
+header:hover{
+    box-shadow: 0px 0px 15px 2px black;
+}
+
+.navigation{
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    flex: 2 1 50px;
+}
+
+.menu{
+    flex: 5;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul.menu li{
+    list-style: none;
+    font-size: 1.3rem;
+    padding: 20px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 300ms ease-in-out;
+}
+
+ul.menu li:hover{
+    transform: scale(1.1);
+    border-color: #fff;
+}
+
+.search{
+    flex: 3;
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"], input[type="password"]{
+    background: transparent;
+    border: 2px solid rgb(41, 147, 233);
+    padding: 8px 5px;
+    outline: none;
+    caret-color: #fff;
+    font-size: 1rem;
+}
+
+input[type]::placeholder{
+    font-size: 0.9rem;
+    padding: 8px 5px;
+    color: rgb(215, 205, 205);
+    transition: all 300ms ease-in-out;
+}
+
+input[type]:focus::placeholder{
+    font-size: 0.7rem;
+}
+
+.btn{
+    background: #127acf;
+    outline: none;
+    border: none;
+    padding: 10px;
+    color:#fff;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #1c95f8;
+}
+
+main{
+    height: calc(100vh - 80px);
+}
+
+.container{
+    height: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+
+.left{
+    flex: 7;
+}
+
+.right{
+    flex: 4;
+}
+
+.left, .right{
+    padding: 40px;
+    align-self: flex-start;
+}
+
+.left .box, .right .box{
+    padding: 40px 20px;
+    border: 2px solid transparent;
+    background: #3831285d;
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+}
+
+.left .box{
+    height: 400px;
+    width: 700px;
+}
+
+.right .box{ 
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.txt-medium{
+    font-size: 2rem;
+}
+
+.txt-bigger{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+hr{
+    width: 80%;
+    height: 3px;
+    border-radius: 5px;
+    border: none;
+    background: #127acf;
+    margin-bottom: 10px;
+}
+
+.form-login{ 
+    width: 100%;
+    padding: 10px 30px;
+}
+
+.form-login > *{ 
+    margin-top: 10px;
+}
+
+.form-login input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #127acf;
+    width: 97%;
+    transition: all 300ms ease-in-out;
+    color: #fff;
+}
+
+.btn-login{
+    width: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.form-login input[type="text"], input[type="password"]:focus{
+    width: 100%;
+    border-color: #1c95f8;
+}
+
+a{
+    text-decoration: none;
+    color: #24ed1e;
+}
+
+.social-media{ 
+    height: 50px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.social-media > * {
+    margin-left: 10px;
+}
+
+.social-media img {
+    height: 100%;
+    filter: invert(0.8);
+    transition: all 300ms ease-in-out;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.social-media img:hover{
+    filter: invert(1);
+    transform: scale(1.1);
+}
