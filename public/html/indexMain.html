@@ -52,11 +52,11 @@
                 </div>
                 <div class="right">
                     <div class="box">
-                        <form class="form-login">
+                        <form action="#" onsubmit="login(event)" class="form-login">
                             <div class="form-group">
                                 <input
                                     type="text"
-                                    placeholder="Username"
+                                    placeholder="email"
                                     name="username"
                                     id="username"
                                     required
@@ -72,7 +72,7 @@
                                     required
                                     />
                             </div>
-                            <button id="submitData" class="btn btn-login" type="submit" name="submitData">Submit</button>
+                            <button id="loginData" class="btn btn-login" value="loginData" >Login</button>
 
                             <!-- <div class="form-group">
                                 <button class="btn btn-login">Login</button>
@@ -95,8 +95,8 @@
             </div>
         </main>
 
-        <script scr="../js/main.js"></script>
-        <script src="../db.json"></script>
+        <script src="../js/loginData.js" type ="module"></script>
+
     </body>
 
 </html>

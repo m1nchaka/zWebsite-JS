@@ -1,43 +1,43 @@
+// Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+  import { getAuth, createUserWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
-    import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyAcAk0_vaM4QSfiCqJ2si37OqNbURpC9us",
-      authDomain: "zwebsite-js-b40ef.firebaseapp.com",
-      databaseURL: "https://zwebsite-js-b40ef-default-rtdb.firebaseio.com",
-      projectId: "zwebsite-js-b40ef",
-      storageBucket: "zwebsite-js-b40ef.appspot.com",
-      messagingSenderId: "149750382535",
-      appId: "1:149750382535:web:e9c3310a2c7cab671aa3e2"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const auth = getAuth(app);
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyDk0SgMetNRnOVxSbpJ-IF7iCs5HOuJVMU",
+    authDomain: "zwebsite-js-6f68f.firebaseapp.com",
+    projectId: "zwebsite-js-6f68f",
+    storageBucket: "zwebsite-js-6f68f.appspot.com",
+    messagingSenderId: "144700694425",
+    appId: "1:144700694425:web:8e6c0d04de55985bfd3d08"
+  };
 
-    submitData.addEventListener('click', (e) =>{
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+//   const analytics = getAnalytics(app);
 
-        var email = document.getElementById('username').value;
-        var password = document.getElementById('password').value;
+  const auth = getAuth()
 
-        createUserWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
-                // Signed in 
-                const user = userCredential.user;
-                alert('user created successfully');
-                // ...
-            })
-            .catch((error) => {
-                const errorCode = error.code;
-                const errorMessage = error.message;
-                // ..
-                alert('error message');
-            });
-    });
+  var username =document.getElementById("username")
+  var password =document.getElementById("password")
+
+  window.signup = function(e){
+    e.preventDefault();
+    var obj = {
+        username : username.value,
+        password : password.value
+    }
+    createUserWithEmailAndPassword(auth, obj.username, obj.password)
+    .then(function(success){
+        alert("signup successfully")
+    })
+    .catch(function(err){
+        alert("error" + err)
+    })
+
+    console.log(obj)
+  };
 
     export {auth , app}

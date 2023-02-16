@@ -54,12 +54,12 @@
                 </div>
                 <div class="right">
                     <div class="box">
-                        <form class="form-login">
+                        <form onsubmit=" signup(event)" class="form-login">
                             <div class="form-group">
                                 <input
                                     type="text"
-                                    placeholder="Username"
-                                    name="username"
+                                    placeholder="email"
+                                    
                                     id="username"
                                     required/>
                             </div>
@@ -68,12 +68,12 @@
                                 <input
                                     type="password"
                                     placeholder="Password"
-                                    name="password"
+                                    
                                     id="password"
                                     required/>
                             </div>
 
-                            <button id="submitData" class="btn btn-login" type="submit" name="submitData">Submit</button>
+                            <button id="submit" class="btn btn-login"  value="submit" ">Submit</button>
                             <!-- <div class="form-group">
                                 <button  id="login-button" class="btn btn-login" type="submit"name="login-button">Submit</button>
 
@@ -95,10 +95,7 @@
             </div>
         </main>
 
-        <script type="module" scr="../js/submit.js"></script>
-        <script type="module" scr="../js/main.js"></script>
-        <script type="module" scr=">../db.jason"></script>
-        <script type="module" scr="../js/firebase,js"></script>
+        <script src="../js/firebase.js" type ="module"></script>
 
     </body>
 
@@ -145,46 +142,4 @@
                 alert('error message');
             });
     });
-  </script> -->
-
-<!-- <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
-    import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyDNNezG5L9pgq3GIqiEtfEa2LsW_k4yOJs",
-      authDomain: "zwebsite-js.firebaseapp.com",
-      projectId: "zwebsite-js",
-      storageBucket: "zwebsite-js.appspot.com",
-      messagingSenderId: "866154053721",
-      appId: "1:866154053721:web:a2e57d5474adbcf4137148"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const auth = getAuth(app);
-
-    submitData.addEventListener('click', (e) =>{
-
-        var email = document.getElementById('username').value;
-        var password = document.getElementById('password').value;
-
-        createUserWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
-                // Signed in 
-                const user = userCredential.user;
-                alert('user created successfully');
-                // ...
-            })
-            .catch((error) => {
-                const errorCode = error.code;
-                const errorMessage = error.message;
-                // ..
-                alert('error message');
-            });
-    });
-  </script> -->
+  </script>  -->
