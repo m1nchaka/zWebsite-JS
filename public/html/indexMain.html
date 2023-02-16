@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="../css/indexMainStyle.css">
+    </head>
+    <body>
+        <header>
+            <div class="navigation">
+                <div class="logo">
+                    CodeWeb
+                </div>
+
+                <ul class="menu">
+                    <!-- <li>Home</li> -->
+                    <li><a href="indexMain.html" style="color: white">Home</a></li>
+                    <!-- <li>Courses</li> -->
+                    <li><a href="coursesPage.html" style="color: white">Courses</a></li>
+                    <!-- <li>Services</li> -->
+                    <li><a href="services.html" style="color: white">Services</a></li>
+                    <!-- <li>About</li> -->
+                    <li><a href="about.html" style="color: white">About</a></li>
+                    <!-- <li>Contact</li> -->
+                    <li><a href="contact.html" style="color: white">Contact</a></li>
+                </ul>
+
+                <div class="search">
+                    <input type="text" placeholder="Search"/>
+                    <button class="btn">Search</button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="left">
+                    <div class="box">
+                        <div class="txt-medium">Learn</div>
+                        <div class="txt-bigger" style="color: #24ed1e">Software</div>
+                        <div class="txt-bigger">Development</div>
+                        <hr />
+                        <div>
+                            Software development is the process of conceiving, specifying, 
+                            designing, programming, documenting, testing, and bug fixing involved 
+                            in creating and maintaining applications, frameworks, or other 
+                            software components.
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="box">
+                        <form class="form-login">
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    placeholder="Username"
+                                    name="username"
+                                    id="username"
+                                    required
+                                    />
+                            </div>
+
+                            <div class="form-group">
+                                <input
+                                    type="password"
+                                    placeholder="Password"
+                                    name="password"
+                                    id="password"
+                                    required
+                                    />
+                            </div>
+                            <button id="submitData" class="btn btn-login" type="submit" name="submitData">Submit</button>
+
+                            <!-- <div class="form-group">
+                                <button class="btn btn-login">Login</button>
+                            </div> -->
+                        </form>
+                        <div>Don't have an Account ?</div>
+                        <div>
+                            <!-- <a href="#signup">Sign up</a> now -->
+                            <a href="signUp.html">Sign up</a> now
+                            <div>Login With</div>
+                        </div>
+                        <div class="social-media">
+                            <img src="../image/fb.svg" alt="Facebook"/>
+                            <img src="../image/insta.svg" alt="Instagram"/>
+                            <img src="../image/twitter.svg" alt="Twitter"/>
+                            <img src="../image/google.svg" alt="Google"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script scr="../js/main.js"></script>
+        <script src="../db.json"></script>
+    </body>
+
+</html>

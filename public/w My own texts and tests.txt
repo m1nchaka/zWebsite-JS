@@ -110,3 +110,74 @@
 
                     </html>
                                 
+
+
+
+
+
+A relational database stores information in tabular form, with rows 
+                        and columns representing different data attributes and the various 
+                        relationships between the data values.
+
+
+
+
+
+.container{
+    height: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+
+.left{
+    flex: 7;
+}
+
+.right{
+    flex: 4;
+}
+
+.left, .right{
+    padding: 40px;
+    align-self: flex-start;
+}
+
+.left .box, .right .box{
+    padding: 40px 20px;
+    border: 2px solid transparent;
+    background: #3831285d;
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+}
+
+.left .box{
+    height: 400px;
+    width: 700px;
+}
+
+.right .box{ 
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.txt-medium{
+    font-size: 2rem;
+}
+
+.txt-bigger{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+hr{
+    width: 80%;
+    height: 3px;
+    border-radius: 5px;
+    border: none;
+    background: #127acf;
+    margin-bottom: 10px;
+}

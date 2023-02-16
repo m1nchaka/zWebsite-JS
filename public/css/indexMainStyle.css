@@ -132,7 +132,7 @@ main{
     border: 2px solid transparent;
     background: #3831285d;
     border-radius: 10px;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(10px);
 }
 
 .left .box{
