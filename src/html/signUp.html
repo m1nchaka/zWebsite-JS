@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="stylesheet" href="../css/indexMainStyle.css">
+    </head>
+    <body>
+        <header>
+            <div class="navigation">
+                <div class="logo">
+                    CodeWeb
+                </div>
+
+                <ul class="menu">
+                    <!-- <li>Home</li> -->
+                    <li><a href="indexMain.html" style="color: white">Home</a></li>
+                    <!-- <li>Courses</li> -->
+                    <li><a href="coursesPage.html" style="color: white">Courses</a></li>
+                    <!-- <li>Services</li> -->
+                    <li><a href="services.html" style="color: white">Services</a></li>
+                    <!-- <li>About</li> -->
+                    <li><a href="about.html" style="color: white">About</a></li>
+                    <!-- <li>Contact</li> -->
+                    <li><a href="contact.html" style="color: white">Contact</a></li>
+                </ul>
+
+                <div class="search">
+                    <input type="text" placeholder="Search"/>
+                    <button class="btn">Search</button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="left">
+                    <div class="box">
+                        <div class="txt-medium">Learn</div>
+                        <div class="txt-bigger" style="color: #24ed1e">Web & API</div>
+                        <div class="txt-bigger">Development</div>
+                        <hr />
+                        <div>
+                            What is Web API ? API stands for Application
+                            Programming Interface.
+                            A Web API is an application programming interface
+                            for the Web.
+                            A Browser API can extend the functionality of a web
+                            browser.
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="box">
+                        <form class="form-login" id="signup-form">
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    placeholder="email"
+                                    name="email"
+                                    id="username"
+                                    minlength="4"
+                                    required/>
+                            </div>
+
+                            <div class="form-group">
+                                <input
+                                    type="password"
+                                    placeholder="Password"
+                                    name="password"
+                                    id="password"
+                                    minlength="5"
+                                    required/>
+                            </div>
+
+                            <button id="submit" type="submit" class="btn btn-login"  value="submit" ">Submit</button>
+                        </form>
+                        <!-- <div>Don't have an Account ?</div> -->
+                        <div>
+                            <!-- <a href="#signup">Sign up</a> now -->
+                            <div>Login With</div>
+                        </div>
+                        <div class="social-media">
+                            <img src="../../assets/image/fb.svg" alt="Facebook"/>
+                            <img src="../../assets/image/insta.svg" alt="Instagram"/>
+                            <img src="../../assets/image/twitter.svg" alt="Twitter"/>
+                            <img src="../../assets/image/google.svg" alt="Google"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script src="../js/firebase.js" type ="module"></script>
+
+    </body>
+
+</html>
+
+<!-- <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+    import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAcAk0_vaM4QSfiCqJ2si37OqNbURpC9us",
+      authDomain: "zwebsite-js-b40ef.firebaseapp.com",
+      databaseURL: "https://zwebsite-js-b40ef-default-rtdb.firebaseio.com",
+      projectId: "zwebsite-js-b40ef",
+      storageBucket: "zwebsite-js-b40ef.appspot.com",
+      messagingSenderId: "149750382535",
+      appId: "1:149750382535:web:e9c3310a2c7cab671aa3e2"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    submitData.addEventListener('click', (e) =>{
+
+        var email = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+
+        createUserWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // Signed in 
+                const user = userCredential.user;
+                alert('user created successfully');
+                // ...
+            })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                // ..
+                alert('error message');
+            });
+    });
+  </script>  -->

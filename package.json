@@ -1,11 +1,23 @@
 {
-  "dependencies": {
-    "-": "^0.0.1",
-    "firebase": "^9.17.1",
-    "g": "^2.0.1"
+  "name": "codeweb",
+  "version": "1.0.0",
+  "description": "Web Application built with HTML, CSS, JavaScript",
+  "main": "./public/html/indexMain.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server ./index.html"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m1nchaka/zWebsite-JS.git"
+  },
+  "author": "Mincho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m1nchaka/zWebsite-JS/issues"
+  },
+  "homepage": "https://github.com/m1nchaka/zWebsite-JS#readme",
   "devDependencies": {
-    "json-server": "^0.17.0",
-    "json-server-auth": "^2.1.0"
+    "lite-server": "^2.6.1"
   }
 }
