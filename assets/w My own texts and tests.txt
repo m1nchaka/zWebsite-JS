@@ -194,3 +194,21 @@ hr{
                     <!-- <li>Contact</li> -->
                     <li><a href="contact.html" style="color: white">Contact</a></li>
                 </ul>
+
+
+
+
+
+
+
+                It is important to protect yourself online for several reasons
+                            The internet can provide a platform for cyberstalking and harassment. By protecting 
+                            your personal information and using privacy settings, you can help reduce the risk of 
+                            being targeted by online predators. Anything you post or share online can potentially 
+                            be seen by millions of people. Protecting your online reputation is important to prevent 
+                            damage to your personal and professional life. When you go online, you may be sharing personal 
+                            information such as your name, address, etc. Cybercriminals may use this information for identity 
+                            theft or fraud, which can have serious consequences.
+                            Financial security: With the rise of online banking and e-commerce, more and more financial transactions 
+                            are happening online. Protecting your online accounts and financial information is essential to prevent theft 
+                            and fraud.

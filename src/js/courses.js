@@ -1,3 +1,16 @@
+const servicesPage =['public/protectYourself.html', 'public/howToProtect.html', 'public/tipsForOnline.html'];
+const servicesBox = document.querySelectorAll('.servicesBox')
+                        .forEach((btn, index) => btn.addEventListener('click', function() { 
+                            // Проверка дали потребителя се е логнал
+                            if (localStorage.getItem('user')) {
+                                location.href = servicesPage[index];
+                            } else { 
+                                window.location = "indexMain.html";
+                                alert("Log in first!");
+                            }
+                        }))
+
+
 const coursePages = ['public/cSharp.html', 'public/python.html'];
 const homeButton = document.querySelectorAll('.homeButton');
 
