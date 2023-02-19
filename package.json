@@ -2,10 +2,10 @@
   "name": "codeweb",
   "version": "1.0.0",
   "description": "Web Application built with HTML, CSS, JavaScript",
-  "main": "./public/html/indexMain.html",
+  "main": "./src/html/indexMain.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "lite-server ./index.html"
+    "start": "lite-server ./src/html/indexMain.html"
   },
   "repository": {
     "type": "git",
