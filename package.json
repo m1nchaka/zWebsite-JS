@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/m1nchaka/zWebsite-JS#readme",
   "devDependencies": {
+    "http-proxy-middleware": "^2.0.6",
     "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "connect-history-api-fallback": "^2.0.0"
   }
 }

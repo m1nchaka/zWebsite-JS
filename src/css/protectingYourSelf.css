@@ -132,28 +132,28 @@ main{
 .container{
     height: inherit;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     color: #fff;
     flex-wrap: wrap;
 }
 
-.course {
+.protect {
     padding: 40px;
     align-self: flex-start;
 }
 
-.course .courseBox {
+.protecting .protectText {
     padding: 40px 20px;
     border: 2px solid transparent;
     background: #3831285d;
     border-radius: 10px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
 }
 
-.course .courseBox{
-    height: 400px;
-    width: 375px;
+.protecting .protectText{
+    height: 860px;
+    width: 800px;
 }
 
 /* .txt-medium{

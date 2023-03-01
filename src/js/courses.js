@@ -1,4 +1,4 @@
-const servicesPage =['public/protectYourself.html', 'public/howToProtect.html', 'public/tipsForOnline.html'];
+const servicesPage =['cyberSecurity.html', 'howToProtect.html', 'tipsForOnline.html'];
 const servicesBox = document.querySelectorAll('.servicesBox')
                         .forEach((btn, index) => btn.addEventListener('click', function() { 
                             // Проверка дали потребителя се е логнал
@@ -11,7 +11,7 @@ const servicesBox = document.querySelectorAll('.servicesBox')
                         }))
 
 
-const coursePages = ['public/cSharp.html', 'public/python.html'];
+const coursePages = ['cSharp.html', 'python.html'];
 const homeButton = document.querySelectorAll('.homeButton');
 
 const courseBox = document.querySelectorAll('.courseBox')

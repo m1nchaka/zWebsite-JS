@@ -138,22 +138,22 @@ main{
     flex-wrap: wrap;
 }
 
-.course {
+.tip {
     padding: 40px;
     align-self: flex-start;
 }
 
-.course .courseBox {
+.tip .tipBox {
     padding: 40px 20px;
     border: 2px solid transparent;
     background: #3831285d;
     border-radius: 10px;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
 }
 
-.course .courseBox{
-    height: 240px;
-    width: 1300px;
+.tip .tipBox{
+    height: 400px;
+    width: 375px;
 }
 
 /* .txt-medium{
