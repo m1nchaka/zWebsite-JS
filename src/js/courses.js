@@ -11,7 +11,7 @@ const servicesBox = document.querySelectorAll('.servicesBox')
                         }))
 
 
-const coursePages = ['cSharp.html', 'python.html'];
+const coursePages = ['cSharpLesson.html', 'pythonLesson.html'];
 const homeButton = document.querySelectorAll('.homeButton');
 
 const courseBox = document.querySelectorAll('.courseBox')
